@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Rast1234</Authors>
+    <PackageProjectUrl>https://github.com/Rast1234/VkNet.TokenMagic</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Rast1234/VkNet.TokenMagic</RepositoryUrl>
+    <Description>VkNet extension to authenticate as Android client app</Description>
+    <PackageTags>vk vknet token authentication auth audio permissions bypass</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

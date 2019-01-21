@@ -8,15 +8,15 @@ using VkNet.Model.RequestParams;
 using VkNet.NLog.Extensions.Logging;
 using VkNet.NLog.Extensions.Logging.Extensions;
 using VkNet.TokenMagic;
-
 namespace Example
 {
     class Program
     {
         private static void Main(string[] args)
         {
+            
             var services = new ServiceCollection();
-            services.AddVkTokenMagic();
+            services.AddTokenMagic();
             services.AddSingleton<ILoggerFactory, LoggerFactory>();
             services.AddSingleton(typeof(ILogger<>), typeof(Logger<>));
             services.AddLogging(builder =>
