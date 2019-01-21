@@ -47,6 +47,10 @@ using VkNet.TokenMagic;
 * No dependencies on ProtocolBuffers
 * No dependencies on external services except Gooogle
 
+## Acknowledgments
+* [vodka2](https://github.com/vodka2/vk-audio-token) for initial implementation
+* [VkNet](https://github.com/vknet/vk) contributors
+* [VkNet.AudioBypass](https://github.com/hikiblade/VkNet.AudioBypass) contributors
 
 # Readme Русский
 
@@ -94,3 +98,8 @@ using VkNet.TokenMagic;
 * Пришлось переизобретать RestClient с используемым HttpClient
 * Нет зависимости от ProtocolBuffers
 * Нет зависимости от внешних сервисов, помимо Google
+
+## Благодарности
+* [vodka2](https://github.com/vodka2/vk-audio-token) за исходную реализацию
+* контрибьюторы [VkNet](https://github.com/vknet/vk)
+* контрибьюторы [VkNet.AudioBypass](https://github.com/hikiblade/VkNet.AudioBypass)
