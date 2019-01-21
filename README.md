@@ -37,6 +37,13 @@ How it works:
 ```
 [Full test project is here](https://github.com/Rast1234/VkNet.TokenMagic/blob/master/Example/Program.cs)
 
+## Notes
+* Cache token if possible!
+* Authentication flow might be broken in non-trivial cases (2FA, captcha, etc)
+* Had to reinvent RestClient with underlying HttpClient
+* No dependencies on ProtocolBuffers
+* No dependencies on external services except Gooogle
+
 
 # Readme Русский
 
@@ -74,3 +81,10 @@ How it works:
     });
 ```
 [Полный тестовый проект здесь](https://github.com/Rast1234/VkNet.TokenMagic/blob/master/Example/Program.cs)
+
+## Заметки
+* Кэшируйте токен, если возможно!
+* Аутентификация может быть сломана в нетривиальных случаях (2-х факторная, капча, и тд)
+* Пришлось переизобретать RestClient с используемым HttpClient
+* Нет зависимости от ProtocolBuffers
+* Нет зависимости от внешних сервисов, помимо Google
