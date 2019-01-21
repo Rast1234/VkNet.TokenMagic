@@ -21,6 +21,21 @@ How it works:
 ### .NET CLI
     dotnet add package VkNet.TokenMagic
 
+## Examples
+```c#
+    //Add all the stuff to DI container:
+    var services = new ServiceCollection();
+    services.AddVkTokenMagic();
+    var vkNet = new VkApi(services);
+    
+    // use login+password
+    vkNet.Authorize(new ApiAuthParams
+    {
+        Login = "LOGIN",
+        Password = "PASSWORD",
+    });
+```
+[Full test project is here](https://github.com/Rast1234/VkNet.TokenMagic/blob/master/Example/Program.cs)
 
 
 # Readme Русский
@@ -43,3 +58,19 @@ How it works:
     
 ### .NET CLI
     dotnet add package VkNet.TokenMagic
+
+## Примеры
+```c#
+    //Добавляем все в DI контейнер:
+    var services = new ServiceCollection();
+    services.AddVkTokenMagic();
+    var vkNet = new VkApi(services);
+    
+    // используем логин+пароль
+    vkNet.Authorize(new ApiAuthParams
+    {
+        Login = "LOGIN",
+        Password = "PASSWORD",
+    });
+```
+[Полный тестовый проект здесь](https://github.com/Rast1234/VkNet.TokenMagic/blob/master/Example/Program.cs)
