@@ -23,9 +23,12 @@ How it works:
 
 ## Examples
 ```c#
-    //Add all the stuff to DI container:
+using VkNet.TokenMagic;
+    ...
     var services = new ServiceCollection();
-    services.AddVkTokenMagic();
+    
+    //Add all the stuff to DI container:
+    services.AddTokenMagic();
     var vkNet = new VkApi(services);
     
     // use login+password
@@ -68,9 +71,12 @@ How it works:
 
 ## Примеры
 ```c#
-    //Добавляем все в DI контейнер:
+using VkNet.TokenMagic;
+    ...
     var services = new ServiceCollection();
-    services.AddVkTokenMagic();
+    
+    // Добавляем весь хлам в DI контейнер:
+    services.AddTokenMagic();
     var vkNet = new VkApi(services);
     
     // используем логин+пароль
